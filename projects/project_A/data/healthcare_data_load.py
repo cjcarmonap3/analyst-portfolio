@@ -14,10 +14,10 @@ from pathlib import Path
 #   - define base directory
 #   - define path where .env file lives
 # =============================================================
-print('Absolute path of file:     ', 
-      os.path.abspath(__file__))
-print('Absolute directoryname: ', 
-      os.path.dirname(os.path.abspath(__file__)))
+current_file = Path(inspect.getfile(inspect.currentframe())).resolve()
+
+print("Script path:", current_file)
+print("Directory:", current_file.parent)
 
 
 print("__file__:", __file__)
