@@ -14,7 +14,7 @@ from pathlib import Path
 #   - define base directory
 #   - define path where .env file lives
 # =============================================================
-current_file = Path(inspect.getfile(inspect.currentframe())).resolve()
+current_file = Path(__file__).resolve()
 
 print("Script path:", current_file)
 print("Directory:", current_file.parent)
