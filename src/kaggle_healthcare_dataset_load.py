@@ -292,11 +292,3 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-# =============================================================
-# Preview raw data
-# =============================================================
-print("First 5 records:")
-print(main())
-
-print("\nDataset info:")
-print(main.info())
